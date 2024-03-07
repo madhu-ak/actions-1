@@ -10,11 +10,11 @@ jobs:
           uses: actions/checkout@v4 
 
         - name: Install cowsay
-          run: sudo apt install cowsay -y 
+          run: sudo apt-get install cowsay -y 
              
 
         - name: generate ASCII art 
-          run: cowsay -f whale "i am a whale" >> whale.txt
+          run: cowsay -f dragon "i am a whale" >> whale.txt
 
 
                 
