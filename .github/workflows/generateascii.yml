@@ -9,14 +9,16 @@ jobs:
                   
           uses: actions/checkout@v4 
 
-        - name: Install cowsay
-          run: sudo apt-get install cowsay -y 
+        - name: Executing Shell scipti
+          run: |
+            chmod +x shell.sh
+            ./shell.sh
              
 
-        - name: generate ASCII art 
-          run:  | 
-           cowsay -f dragon "i am a whale" >> whale.txt
-           cat whale.txt
+        # - name: generate ASCII art 
+        #   run:  | 
+        #    cowsay -f dragon "i am a whale" >> whale.txt
+        #    cat whale.txt
 
 
                 
