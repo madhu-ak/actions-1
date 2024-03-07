@@ -14,7 +14,9 @@ jobs:
              
 
         - name: generate ASCII art 
-          run: cowsay -f dragon "i am a whale" >> whale.txt
+          run:  | 
+           cowsay -f dragon "i am a whale" >> whale.txt
+           cat whale.txt
 
 
                 
