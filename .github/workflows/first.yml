@@ -9,5 +9,4 @@ jobs:
         - name: Welcome message
           run: echo "My actions"
 
-        - name: Read file
-          run: cat README.MD        
+                
