@@ -1,53 +1,22 @@
-name: Generate ASCII 
-on: push 
+name: Running multiple Jobs
+
+on: push
 
 jobs:
-  build_job_1:
-        runs-on: ubuntu-latest
-        steps:
-        - name: checkout repo
-                  
-          uses: actions/checkout@v4 
+  first_job_1:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    - name: Display message
+      run: echo "Hello World"
+    
+  second_job_2:
+  
+    runs-on: ubuntu-latest
 
-        - name: Executing Shell scipti
-          run: |
-            chmod +x shell.sh
-            ./shell.sh
-
-            
-            
-     
-  build_job_2:
-        needs: build_job_1
-        runs-on: ubuntu-latest
-        steps:
-        - name: checkout repo
-          run: sleep 10
-
-        - name: checkout repo
-          run: grep -i "whale" whale.txt
-                              
-               
-            
-
-                         
-            
-            
-            
-                            
-                                     
-
-                         
-            
- 
-            
-            
-                            
-            
-            
-            
-                            
-            
-
-
-                
+    
+    steps:
+    - name: Dispaly message
+      run: echo "Successfulllllyyyy"
+  
